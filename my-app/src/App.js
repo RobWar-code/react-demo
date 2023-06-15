@@ -8,7 +8,7 @@ function App() {
     <div className="App">
       <FunctionalGreeting />
       <FunctionalGreetingWithProps greeting="Nice to meet you!" />
-      <StatefulGreeting />
+      <StatefulGreeting message="from Stateful Class" />
     </div>
   );
 }
