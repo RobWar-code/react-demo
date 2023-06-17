@@ -3,6 +3,7 @@ import FunctionalGreeting from './Components/FunctionalGreeting.js';
 import FunctionalGreetingWithProps from './Components/FunctionalGreetingWithProps.js';
 import StatefulGreeting from './Components/StatefulGreeting.js';
 import StatefulGreetingWithCallback from './Components/StatefulGreetingWithCallback.js';
+import StatefulGreetingWithPrevState from './Components/StatefulGreetingWithPrevState.js';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <FunctionalGreetingWithProps greeting="Nice to meet you!" />
       <StatefulGreeting message="from Stateful Class" />
       <StatefulGreetingWithCallback message="from StatefulGreetingWithCallback" />
+      <StatefulGreetingWithPrevState message="from StatefulGreetingWithPrevState" />
     </div>
   );
 }
