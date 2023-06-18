@@ -5,18 +5,27 @@ class StatefulGreetingWithCallback extends React.Component{
         super(props);
         this.state = {
             introduction: "Hello!",
-            buttonText: "Exit"
+            buttonText: "Exit",
+            count: 0
         };
     }
 
     handleClick() {
-        this.setState({
-            introduction: "Goodbye!",
-            buttonText: "Enter"
+        this.setState((prevState, prevProps) => {
+            console.log("prev state", prevState.introduction);
+            console.log("prev state", prevState.buttonText);
+            return {
+                introduction: prevState.introduction === "Hello!" ? "Goodbye!": "Hello!",
+                buttonText: prevState.buttonText === "Enter" ? "Exit": "Enter",
+            };
         }, () => {
             // Callback
-            console.log("new state", this.state.introduction);
-            console.log("new state", this.state.buttonText);
+        })
+    }
+
+    increment() {
+        this.setState((prevState, prevProps) => {
+           return {count: prevState.count + 1};
         })
     }
 
@@ -25,6 +34,7 @@ class StatefulGreetingWithCallback extends React.Component{
             <div>
                 <h1>{this.state.introduction} {this.props.message}</h1>
                 <button onClick={() => this.handleClick()}>{this.state.buttonText}</button>
+                <button onClick={() => this.increment()}>Increment</button><span> {this.state.count}</span>
             </div>
         )
     }
