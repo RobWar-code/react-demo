@@ -7,6 +7,7 @@ import StatefulGreetingWithCallback from './Components/StatefulGreetingWithCallb
 import StatefulGreetingWithPrevState from './Components/StatefulGreetingWithPrevState.js';
 */
 import NavBarForm from './Components/NavBarForm.js';
+import RenderingLists from './Components/RenderingLists.js'
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <StatefulGreetingWithPrevState message="from StatefulGreetingWithPrevState" />
       */}
       <NavBarForm />
+      <RenderingLists />
     </div>
   );
 }
