@@ -9,6 +9,7 @@ import StatefulGreetingWithPrevState from './Components/StatefulGreetingWithPrev
 import NavBarForm from './Components/NavBarForm.js';
 import Mounted from './Components/Mounted.js';
 import RenderingLists from './Components/RenderingLists.js';
+import ComponentUpdated from './Components/ComponentUpdated.js';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
       */}
       <NavBarForm />
       <Mounted />
+      <ComponentUpdated />
       <RenderingLists />
     </div>
   );
