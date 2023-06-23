@@ -10,6 +10,8 @@ import NavBarForm from './Components/NavBarForm.js';
 import Mounted from './Components/Mounted.js';
 import RenderingLists from './Components/RenderingLists.js';
 import ComponentUpdated from './Components/ComponentUpdated.js';
+import MouseMove from './Components/MouseMove.js'
+import LifeCyclesCWU from './Components/LifeCyclesCWU.js';
 
 function App() {
   return (
@@ -25,6 +27,8 @@ function App() {
       <Mounted />
       <ComponentUpdated />
       <RenderingLists />
+      <MouseMove />
+      <LifeCyclesCWU />
     </div>
   );
 }
