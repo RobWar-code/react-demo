@@ -6,12 +6,15 @@ import StatefulGreeting from './Components/StatefulGreeting.js';
 import StatefulGreetingWithCallback from './Components/StatefulGreetingWithCallback.js';
 import StatefulGreetingWithPrevState from './Components/StatefulGreetingWithPrevState.js';
 */
+/*
 import NavBarForm from './Components/NavBarForm.js';
 import Mounted from './Components/Mounted.js';
 import RenderingLists from './Components/RenderingLists.js';
 import ComponentUpdated from './Components/ComponentUpdated.js';
 import MouseMove from './Components/MouseMove.js'
 import LifeCyclesCWU from './Components/LifeCyclesCWU.js';
+*/
+import ControlledForm from './Components/ControlledForm.js'
 
 function App() {
   return (
@@ -22,13 +25,14 @@ function App() {
       <StatefulGreeting message="from Stateful Class" />
       <StatefulGreetingWithCallback message="from StatefulGreetingWithCallback" />
       <StatefulGreetingWithPrevState message="from StatefulGreetingWithPrevState" />
-      */}
       <NavBarForm />
       <Mounted />
       <ComponentUpdated />
       <RenderingLists />
       <MouseMove />
       <LifeCyclesCWU />
+      */}
+      <ControlledForm />
     </div>
   );
 }

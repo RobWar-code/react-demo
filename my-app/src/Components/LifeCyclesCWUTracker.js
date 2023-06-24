@@ -16,6 +16,7 @@ export class LifeCyclesCWUTracker extends Component {
       mouseY: e.clientY,
     })
   }
+
   componentDidMount() {
     window.addEventListener('mousemove', this.trackMouse);
   }
@@ -25,6 +26,7 @@ export class LifeCyclesCWUTracker extends Component {
   componentWillUnmount() {
     window.removeEventListener('mousemove', this.trackMouse);
   }
+  
   render() {
     return (
       <div>
