@@ -14,8 +14,9 @@ import ComponentUpdated from './Components/ComponentUpdated.js';
 import MouseMove from './Components/MouseMove.js'
 import LifeCyclesCWU from './Components/LifeCyclesCWU.js';
 import ControlledForm from './Components/ControlledForm.js';
-*/
 import UncontrolledForm from './Components/UncontrolledForm.js';
+*/
+import SearchBar from './Components/SearchBar.js';
 
 function App() {
   return (
@@ -33,8 +34,9 @@ function App() {
       <MouseMove />
       <LifeCyclesCWU />
       <ControlledForm />
-      */}
       <UncontrolledForm />
+      */}
+      <SearchBar />
     </div>
   );
 }
