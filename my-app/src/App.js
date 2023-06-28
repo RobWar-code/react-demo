@@ -18,8 +18,10 @@ import UncontrolledForm from './Components/UncontrolledForm.js';
 import SearchBar from './Components/SearchBar.js';
 import HooksCounter from './Components/HooksCounter';
 import ControlledFormHooks from './Components/ControlledFormHooks';
-*/
 import UseStateWithArrays from './Components/UseStateWithArrays';
+import UseStateWithObjects from './Components/UseStateWithObjects';
+*/
+import UseEffectCounter from './Components/UseEffectCounter';
 
 function App() {
   return (
@@ -41,9 +43,10 @@ function App() {
       <SearchBar />
       <HooksCounter />
       <ControlledFormHooks />
-    */}
       <UseStateWithArrays />
-
+      <UseStateWithObjects />
+    */}
+      <UseEffectCounter />
     </div>
   );
 }

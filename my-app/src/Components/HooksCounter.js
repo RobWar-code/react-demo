@@ -11,6 +11,7 @@ export default function HooksCounter(props) {
         </h1>
         <h2>You clicked {count} times</h2>
         <button onClick={
+            /* Note the use of an arrow function to relay the previous state for update */
             () => setCount(count => count + 1)
         }>
             Increment Counter
