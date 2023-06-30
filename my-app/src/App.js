@@ -20,8 +20,10 @@ import HooksCounter from './Components/HooksCounter';
 import ControlledFormHooks from './Components/ControlledFormHooks';
 import UseStateWithArrays from './Components/UseStateWithArrays';
 import UseStateWithObjects from './Components/UseStateWithObjects';
-*/
 import UseEffectCounter from './Components/UseEffectCounter';
+import HTTPRequests from './Components/HTTPRequests'
+*/
+import HTTPPosts from './Components/HTTPPosts'
 
 function App() {
   return (
@@ -45,8 +47,10 @@ function App() {
       <ControlledFormHooks />
       <UseStateWithArrays />
       <UseStateWithObjects />
-    */}
       <UseEffectCounter />
+      <HTTPRequests />
+    */}
+      <HTTPPosts />
     </div>
   );
 }
