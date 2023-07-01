@@ -22,8 +22,9 @@ import UseStateWithArrays from './Components/UseStateWithArrays';
 import UseStateWithObjects from './Components/UseStateWithObjects';
 import UseEffectCounter from './Components/UseEffectCounter';
 import HTTPRequests from './Components/HTTPRequests'
-*/
 import HTTPPosts from './Components/HTTPPosts'
+*/
+import HTTPHooks from './Components/HTTPHooks'
 
 function App() {
   return (
@@ -49,8 +50,9 @@ function App() {
       <UseStateWithObjects />
       <UseEffectCounter />
       <HTTPRequests />
-    */}
       <HTTPPosts />
+    */}
+      <HTTPHooks />
     </div>
   );
 }
